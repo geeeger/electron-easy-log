@@ -159,10 +159,10 @@ class Log {
             return;
         }
         if (this.level === LOG_LEVEL.LOW && level === LOG_TYPE.ERROR) {
-            this._log(level, message);
+            this._log(type, message);
             return;
         }
-        this._log(level, message);
+        this._log(type, message);
     }
 
     warn(message) {
